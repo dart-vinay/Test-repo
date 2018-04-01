@@ -6,7 +6,7 @@ import pandas as pd
 
 
 class TrainingExecutionSystem(SimpleExecutionSystem):
-    def __init__(self, enter_threshold=0.9, exit_threshold=0.55, longLimit=10,
+    def __init__(self, enter_threshold=1, exit_threshold=1, longLimit=10,
                  shortLimit=10, capitalUsageLimit=0, enterlotSize=1, exitlotSize = 1, limitType='L', price=''):
         super(TrainingExecutionSystem, self).__init__(enter_threshold=enter_threshold,
                                                     exit_threshold=exit_threshold,
